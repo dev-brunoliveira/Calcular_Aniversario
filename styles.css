@@ -1,0 +1,146 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+
+    /* Adicionando borda de neon */
+    border: 5px solid transparent;
+    border-radius: 8px;
+    animation: neon-border-animation 2s infinite alternate;
+}
+
+@keyframes neon-border-animation {
+    0% {
+        border-color: #ff00ff; /* Cor inicial da borda de neon */
+    }
+    100% {
+        border-color: #00ff00; /* Cor final da borda de neon */
+    }
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    animation: neon-border-animation 1.5s infinite alternate;
+}
+
+
+
+#days {
+    font-size: 50px;
+    font-weight: bold;
+    color: #00ff0d56; /* Cor inicial para o neon */
+    text-shadow: 0 0 5px #0c500c; /* Sombra de texto */
+    animation: neon-text 1.5s infinite alternate;
+}
+
+@keyframes neon-text {
+    0% {
+        text-shadow: 0 0 5px #000000; /* Sombra inicial */
+        color: #000000; /* Cor inicial */
+    }
+    100% {
+        text-shadow: 0 0 20px #000000; /* Sombra final */
+        color: #000000; /* Cor final */
+    }
+}
+
+.logo {
+    max-width: 60%;
+    margin-right: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    overflow: hidden; /* Para garantir que a borda neon não escape do formulário */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #09ff00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #065310;
+}
+
+.neon-border {
+    border: 2px solid transparent;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    animation: neon-border-animation 1.5s infinite alternate;
+}
+
+@keyframes neon-border-animation {
+    0% {
+        border-color: #ff00ff;
+    }
+    100% {
+        border-color: #00ff00;
+    }
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #555;
+}
+
+#countdown {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #007bff;
+}
